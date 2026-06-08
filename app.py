@@ -34,8 +34,7 @@ def clean_text(text):
     return text
 
 def preprocess_text(text):
-    cleaned_text = clean_text(text)
-    tokens = nltk.word_tokenize(cleaned_text)
+    tokens = cleaned_text.split()
     tokens = [word for word in tokens if word not in stop_words]
     tokens = [lemmatizer.lemmatize(word) for word in tokens]
     return " ".join(tokens)
