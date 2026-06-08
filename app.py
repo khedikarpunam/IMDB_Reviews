@@ -9,6 +9,7 @@ from nltk.stem import WordNetLemmatizer
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
 nltk.download('wordnet', quiet=True)
+nltk.download('punk_tab', quiet=True)
 
 # Load the trained model and vectorizer
 try:
