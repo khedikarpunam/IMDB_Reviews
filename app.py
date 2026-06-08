@@ -2,14 +2,15 @@ import streamlit as st
 import joblib
 import re
 import nltk
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
 
 # Download NLTK data (if not already downloaded in the environment where Streamlit runs)
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
 nltk.download('wordnet', quiet=True)
 nltk.download('punk_tab', quiet=True)
+
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
 # Load the trained model and vectorizer
 try:
